@@ -54,8 +54,10 @@ The fixed width layout remains for next week work for module 3.
 
 
 ## Next sprint 
+responsive problem to fix
 text box sizing
-
+elemnts going off page
+not alienging properly
 
 ## Module 3 change Log:
 CSS:
