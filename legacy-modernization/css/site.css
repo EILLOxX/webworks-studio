@@ -1,6 +1,22 @@
-/* Southtown Plant Co. legacy style sheet
-   Last updated: 08/17/2000
+/* Southtown Plant Co. legacy stylesheet
 */
+
+/* --- Global Resets & Typography --- */
+
+/* Mobile: items stack vertically below 768px */
+
+
+.container{
+  border-top: 12px solid #285B39;
+  border-bottom: 12px solid #285B39;
+  
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 
 body {
   margin-top: 18px;
@@ -11,10 +27,20 @@ body {
   color: #333333;
 }
 
+/* Base Page Wrapper */
+#container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+/* Typography Defaults */
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 12px;
 }
 
 .intro {
@@ -24,64 +50,33 @@ p {
   color: #4C5148;
 }
 
-h2 {
+h1 {
   font-family: Georgia, "Times New Roman", serif;
   color: #315C3D;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  
+  color: #315C3D;
   font-size: 24px;
+  font-family: Georgia, "Times New Roman", serif;
   margin-bottom: 8px;
+  padding-bottom: 4px;
 }
 
-a {
-  color: #285B39;
-}
-
-a:hover {
-  color: #993300;
-}
-
-.navcell {
-  background-color: #315C3D;
-  height: 34px;
-}
-
-.navcell a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.navcell a:hover {
-  color: #FFF3B8;
-}
-
-.photo {
-  border: 1px solid #9E9475;
-}
-
-.footertext {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #666666;
-}
-
-.footertext a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-}
-
-/* old notes
-.green { color: #315C3D; }
-*/
-
-td {
+h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: bold;
+  color: #315C3D;
+  margin-bottom: 6px;
 }
 
-/* duplicate link rules from later update */
-a:link {
+/* Links */
+a:link,
+a {
   color: #285B39;
 }
 
@@ -89,6 +84,244 @@ a:visited {
   color: #6C4E32;
 }
 
+a:hover,
 a:active {
   color: #993300;
+}
+
+/* --- Header Section --- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header-contact {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.header-contact p {
+  margin-bottom: 4px;
+}
+
+/* --- Main Navigation Bar --- */
+.site-nav  {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  gap: 1.5rem;
+
+
+
+  
+  background-color: #315C3D;
+}
+
+.site-nav {
+  
+}
+
+.site-nav a {
+  
+  height: 34px;
+  line-height: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #FFF3B8;
+}
+
+/* --- Hero Section --- */
+.hero {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.hero-content {
+  flex: 1;
+  font-size: 32px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero-image img {
+  border: 1px solid #9E9475;
+}
+
+.promo-box {
+  border: 1px solid #D5CCAE;
+  background-color: #E8E1C9;
+  padding: 10px;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+.cta-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* --- Plants Section --- */
+.plants-section {
+  margin-bottom: 30px;
+  border-top: 4px solid #285B39;
+  padding-top: 24px;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.plant-grid {
+  display: flex;
+  gap: 0px;
+  margin-top: 16px;
+}
+
+.plant-card {
+  flex: 1;
+  border: 1px solid #D5CCAE;
+  padding: 10px;
+  background-color: #F6F0DA;
+}
+
+.plant-card h3 {
+  color: #315C3D;
+  margin-bottom: 4px;
+}
+
+/* --- Quick Links Sidebar & Content Layout --- */
+.layout-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.quick-links {
+  width: 190px;
+  height: 426px ;
+  background-color: #EFE7CE;
+  padding: 12px;
+  align-self: flex-start;
+}
+
+.quick-links h3 {
+  color: #315C3D;
+  margin-bottom: 12px;
+}
+
+.quick-links ul {
+  list-style: none;
+}
+
+.quick-links li {
+  font-size: 13px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 16px;
+}
+
+/* Styled bullet point */
+.quick-links li::before {
+  content: "■";
+  color: #315C3D;
+  font-size: 8px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.quick-links a {
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.content-body {
+  flex: 1;
+
+}
+
+.content-body section {
+  margin-bottom: 24px;
+}
+
+/* Divider inside content body */
+.content-body section:not(:last-child) {
+  border-bottom: 1px solid #C8BE9D;
+  padding-bottom: 16px;
+}
+
+/* About Storefront Layout */
+#about figure {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+#about figure img {
+  border: 1px solid #9E9475;
+}
+
+/* --- Visit Section --- */
+.visit-section {
+  display: flex;
+  gap: 20px;
+  background-color: #EFE7CE;
+  padding: 16px;
+  border-top: 1px solid #D5CCAE;
+  margin-bottom: 20px;
+}
+
+.address-info,
+.hours-info {
+  flex: 1;
+}
+
+.visit-section h2{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+.address-info address  {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* --- Footer --- */
+.site-footer {
+  text-align: center;
+  border-top: 1px solid #D5CCAE;
+  padding-top: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #666666;
+}
+
+.site-footer nav {
+  margin-bottom: 8px;
+}
+
+.site-footer nav a {
+  font-size: 11px;
+  margin: 0 4px;
+}
+
+.site-footer p {
+  font-size: 11px;
+  line-height: 16px;
+  color: #666666;
 }
