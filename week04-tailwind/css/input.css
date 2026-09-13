@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Brand Core Palettes */
+  --color-brand-dark: #2f241f;      /* Header/Footer background, dark bold text */
+  --color-brand-main: #6d4a38;   /* Primary button background, dark brown accents */
+  --color-brand-accent: #8b5e3c;    /* Small subheaders and highlight labels */
+  --color-brand-muted: #63564f;     /* Descriptive body paragraphs and subtext */
+
+  /* Neutral Background Palettes */
+  --color-coffee-cream: #faf7f2;    /* Main base page background */
+  --color-coffee-tan: #eadcca;      /* Hero section block background */
+  --color-coffee-warm: #f0e5d7;     /* Story section block background */
+  --color-coffee-badge: #f0e4d5;    /* Button badges and internal highlights */
+  
+  /* Decorative UI Borders */
+  --color-coffee-border: #ded6cc;   /* Solid thin border line for grid cards */
+
+  /* Fonts it uses */
+     --font-sans: Arial, Helvetica, sans-serif; 
+}
