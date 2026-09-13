@@ -268,6 +268,21 @@
   .table {
     display: table;
   }
+  .h-27 {
+    height: calc(var(--spacing) * 27);
+  }
+  .h-27\.5 {
+    height: calc(var(--spacing) * 27.5);
+  }
+  .h-37 {
+    height: calc(var(--spacing) * 37);
+  }
+  .h-37\.5 {
+    height: calc(var(--spacing) * 37.5);
+  }
+  .h-75 {
+    height: calc(var(--spacing) * 75);
+  }
   .h-\[110px\] {
     height: 110px;
   }
@@ -291,6 +306,15 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-87 {
+    max-width: calc(var(--spacing) * 87);
+  }
+  .max-w-87\.5 {
+    max-width: calc(var(--spacing) * 87.5);
+  }
+  .max-w-350 {
+    max-width: calc(var(--spacing) * 350);
   }
   .max-w-\[350px\] {
     max-width: 350px;
@@ -596,6 +620,68 @@
     .hover\:bg-amber-200:hover {
       background-color: var(--color-amber-200);
     }
+    .hover\:bg-black\/6:hover {
+      background-color: color-mix(in srgb, #000 6%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-black\/6:hover {
+        background-color: color-mix(in oklab, var(--color-black) 6%, transparent);
+      }
+    }
+    .hover\:bg-black\/7:hover {
+      background-color: color-mix(in srgb, #000 7%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-black\/7:hover {
+        background-color: color-mix(in oklab, var(--color-black) 7%, transparent);
+      }
+    }
+    .hover\:bg-black\/70:hover {
+      background-color: color-mix(in srgb, #000 70%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-black\/70:hover {
+        background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+      }
+    }
+    .hover\:bg-brand-main:hover {
+      background-color: var(--color-brand-main);
+    }
+    .hover\:bg-brand-main\/5:hover {
+      background-color: color-mix(in srgb, #6d4a38 5%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-brand-main\/5:hover {
+        background-color: color-mix(in oklab, var(--color-brand-main) 5%, transparent);
+      }
+    }
+    .hover\:bg-brand-main\/65:hover {
+      background-color: color-mix(in srgb, #6d4a38 65%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-brand-main\/65:hover {
+        background-color: color-mix(in oklab, var(--color-brand-main) 65%, transparent);
+      }
+    }
+    .hover\:bg-brand-main\/70:hover {
+      background-color: color-mix(in srgb, #6d4a38 70%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-brand-main\/70:hover {
+        background-color: color-mix(in oklab, var(--color-brand-main) 70%, transparent);
+      }
+    }
+    .hover\:bg-brand-main\/90:hover {
+      background-color: color-mix(in srgb, #6d4a38 90%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-brand-main\/90:hover {
+        background-color: color-mix(in oklab, var(--color-brand-main) 90%, transparent);
+      }
+    }
+    .hover\:bg-brand-main\/100:hover {
+      background-color: var(--color-brand-main);
+    }
     .hover\:text-amber-200:hover {
       color: var(--color-amber-200);
     }
@@ -656,11 +742,17 @@
     .md\:flex {
       display: flex;
     }
+    .md\:h-25 {
+      height: calc(var(--spacing) * 25);
+    }
     .md\:h-\[100px\] {
       height: 100px;
     }
     .md\:h-\[520px\] {
       height: 520px;
+    }
+    .md\:min-h-130 {
+      min-height: calc(var(--spacing) * 130);
     }
     .md\:min-h-\[520px\] {
       min-height: 520px;
@@ -690,6 +782,9 @@
     }
     .lg\:col-span-7 {
       grid-column: span 7 / span 7;
+    }
+    .lg\:max-w-100 {
+      max-width: calc(var(--spacing) * 100);
     }
     .lg\:max-w-\[400px\] {
       max-width: 400px;
