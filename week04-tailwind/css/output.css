@@ -298,6 +298,12 @@
   .h-auto {
     height: auto;
   }
+  .min-h-37 {
+    min-height: calc(var(--spacing) * 37);
+  }
+  .min-h-37\.5 {
+    min-height: calc(var(--spacing) * 37.5);
+  }
   .w-\[380px\] {
     width: 380px;
   }
