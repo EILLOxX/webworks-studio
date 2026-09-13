@@ -47,7 +47,7 @@ Before submitting, replace the placeholders below with approximately three examp
 **Why: To add visual for when buttons and links are being hovored on so it's easier to tell what they are **  
 
 ## Live Site
-Add your published GitHub Pages URL here.
+https://eilloxx.github.io/webworks-studio/week04-tailwind
 
 ## Reminder
 The Tailwind Play CDN is being used for this instructional sprint only. It is intended for development, not production deployment workflows.
