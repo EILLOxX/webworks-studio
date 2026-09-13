@@ -35,16 +35,16 @@ Use Tailwind utilities to translate the supplied visual direction into a polishe
 Before submitting, replace the placeholders below with approximately three examples.
 
 ### Decision 1
-**Used: Responsive prefixes  **  
-**Why: I used them to keep the sections and everything in them perfectly alligned when things are resized at certain points without them it caused certain sections to appear ontop of other sections or just looked weird. **  
+**Used:** Responsive prefixes
+**Why:** I used them to keep the sections and everything in them perfectly aligned when things are resized at certain points. without them it caused certain sections to appear ontop of other sections or just looked weird.
 
 ### Decision 2
-**Used: FLexbox and Grid**  
-**Why: I used Flex and Grid to maintain a good layout structure instead of having everything fill up the page weirdly. **  
+**Used:** FLexbox and Grid
+**Why:** I used Flex and Grid to maintain a good layout structure instead of having everything fill up the page weirdly.
 
 ### Decision 3
-**Used: Interactive states **  
-**Why: To add visual for when buttons and links are being hovored on so it's easier to tell what they are **  
+**Used:** Interactive states
+**Why:** To add visual for when buttons and links are being hovered on so it's easier to tell what they are
 
 ## Live Site
 https://eilloxx.github.io/webworks-studio/week04-tailwind
