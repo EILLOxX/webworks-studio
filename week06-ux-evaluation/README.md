@@ -85,7 +85,7 @@ something to show the time to comeplete a trail walk
 no past reviews
 
 **Evidence:**
-missing reviw section
+missing review section
 
 **User Impact:**
 this makes maya unable to read a trail about other people's time there
@@ -105,10 +105,10 @@ something that allows people to add their experience and their tips.
 main links dont function as they should
 
 **Evidence:**
-links dont work when clicked or show better link accessibility
+navagaton and button links dont work when clicked or show better link visual identification
 
 **User Impact:**
-this effects mayas abilitly of learning more about trails and whats best for her
+this effects mayas abilitly of learning more about trails and whats best for her and what is clickable
 
 **Principle:**
 navagation and accessiblity princible
