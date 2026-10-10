@@ -50,6 +50,23 @@ difficultyButton.addEventListener("click", () => {
 // PART 2 — HIKE PLANNING FORM
 // ======================================================
 
+const planForm = document.querySelector("#hike-form");
+const feedback = document.querySelector("#form-feedback");
+
+planForm.addEventListener("submit", (event) => {
+  if (!planForm.checkValidity()) {
+    return;
+  }
+
+  event.preventDefault();
+
+  const trail = document.querySelector("#trail").value;
+  const experience = document.querySelector("#experience").value;
+  const hours = document.querySelector("#hours").value;
+
+  feedback.textContent = `Plan ready: ${trail} for ${experience.toLowerCase()}. Check official conditions before you leave.`;
+});
+
 // TODO 6:
 // Select the form and the feedback region.
 
