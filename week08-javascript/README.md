@@ -59,4 +59,4 @@ I made sure not to break anything and doubled checked that everything works with
 
 ## Live Site
 
-https://eilloxx.github.io/webworks-studio/week08-javascript
+https://github.com/EILLOxX/webworks-studio/week08-javascript
