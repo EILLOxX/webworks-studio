@@ -17,13 +17,13 @@
 
 What elements did your script need to select, and why?
 
-The elements my trial disclosure script needed to select was the difficulty toggle for the button and the difficulty panel for the hidden information text. this allowed the disclosure to be hidden and revealed. 
+The elements my Trial disclosure script needed to select was the difficulty toggle for the button and the difficulty panel for the hidden information text. This allowed the disclosure to be hidden and revealed. For the form it needs the Hike form, and the Form feedback element to check for correct validation, and confirmation message. The Form feild elements for creating the perfect trail plan to follow as a final feedback.
 
 ### Decision 2 — Event Handling
 
 What events did you listen for? Why were those events appropriate?
 
-The events that were listened for was click and submit. the click is to activate the button tasks by opening and closing. submit is for the form 
+The events that were listened for was click and submit. the click is to activate the disclosure button tasks by opening and closing. Submit is for form's and when it submits it sends all the data to the server upon submit.
 
 ### Decision 3 — State / DOM Update
 
