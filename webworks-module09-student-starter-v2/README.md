@@ -171,18 +171,18 @@ TODO
 ## Preline Decision
 
 **Preline component selected:**  
-TODO
+Ui Accordion
 
 **Problem it solves:**  
-TODO
+It allows the questions to be viewed first and the answeres second minimizing clutter 
 
 **How you adapted it:**  
-TODO
+I added back the tailwind classes to keep the same style the visiotor questions had previously
 
 ## Accessibility Notes
 
 1. TODO
-2. TODO
+2. when using the site with a keyboard every interactable thing can be focused on
 
 ## Testing Notes
 

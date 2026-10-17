@@ -389,6 +389,8 @@
            or another instructor-approved Preline component.
            Use official Preline documentation. -->
 
+
+
         <div
           class="mt-8 rounded-xl border-2 border-dashed border-amber-500 bg-amber-50 p-5"
         >
@@ -401,42 +403,165 @@
           </p>
         </div>
 
-        <div class="mt-7 grid gap-5 md:grid-cols-2">
-          <article class="rounded-xl border border-stone-300 bg-white p-5">
-            <h3 class="text-lg font-bold text-[#142b3a]">
-              Can I bring children?
-            </h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-              Yes. The market is family-friendly. Children should remain with an
-              adult, especially during live demonstrations.
-            </p>
-          </article>
-          <article class="rounded-xl border border-stone-300 bg-white p-5">
-            <h3 class="text-lg font-bold text-[#142b3a]">Are pets allowed?</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-              Only trained service animals are allowed inside Mission Plaza Arts
-              Hall.
-            </p>
-          </article>
-          <article class="rounded-xl border border-stone-300 bg-white p-5">
-            <h3 class="text-lg font-bold text-[#142b3a]">
-              Can I buy items online later?
-            </h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
+<div class="hs-accordion-group mt-7 grid gap-5 md:grid-cols-2">
+
+  <div class="hs-accordion active rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-one">
+    <button
+      class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
+      aria-controls="accordion-collapse-one"
+    >
+      <h3 class="text-lg font-bold text-[#142b3a]">Can I bring children?</h3>
+      <svg
+        class="hs-accordion-active:hidden h-3 w-3 shrink-0 text-[#246b63]"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <svg
+        class="hs-accordion-active:block hidden h-3 w-3 shrink-0 text-[#246b63]"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 11.354a.5.5 0 0 1 .708 0L8 5.707l5.646 5.647a.5.5 0 0 1-.708-.708l-6-6a.5.5 0 0 1-.708 0l-6 6a.5.5 0 0 1-.708z"
+        />
+      </svg>
+    </button>
+
+    <div id="accordion-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+      <p class="p-5 text-sm leading-6 text-slate-600">
+        Yes, the market is family-friendly! Children should remain with an adult, especially during live demonstrations.
+      </p>
+    </div>
+  </div>
+
+  <div class="hs-accordion rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-two">
+    <button
+      class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
+      aria-controls="accordion-collapse-two"
+    >
+      <h3 class="text-lg font-bold text-[#142b3a]">Are pets allowed?</h3>
+      <svg
+        class="hs-accordion-active:hidden h-3 w-3 shrink-0 text-[#246b63]"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <svg
+        class="hs-accordion-active:block hidden h-3 w-3 shrink-0 text-[#246b63]"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 11.354a.5.5 0 0 1 .708 0L8 5.707l5.646 5.647a.5.5 0 0 1-.708-.708l-6-6a.5.5 0 0 1-.708 0l-6 6a.5.5 0 0 1-.708z"
+        />
+      </svg>
+    </button>
+
+    <div id="accordion-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+      <p class="p-5 text-sm leading-6 text-slate-600">
+        Only trained service animals are allowed inside Mission Plaza Arts Hall.
+      </p>
+  </div>
+  </div>
+
+  <div class="hs-accordion rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-three">
+    <button
+      class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
+      aria-controls="accordion-collapse-three"
+    >
+      <h3 class="text-lg font-bold text-[#142b3a]">Can I buy items online later?</h3>
+      <svg
+        class="hs-accordion-active:hidden h-3 w-3 shrink-0 text-[#246b63]"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+        />
+      </svg>
+      <svg
+        class="hs-accordion-active:block hidden h-3 w-3 shrink-0 text-[#246b63]"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1.646 11.354a.5.5 0 0 1 .708 0L8 5.707l5.646 5.647a.5.5 0 0 1-.708-.708l-6-6a.5.5 0 0 1-.708 0l-6 6a.5.5 0 0 1-.708z"
+        />
+      </svg>
+    </button>
+
+    <div id="accordion-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+      <p class="p-5 text-sm leading-6 text-slate-600">
               Many vendors sell online, but availability varies. Ask the maker
               for a business card or website before you leave.
             </p>
-          </article>
-          <article class="rounded-xl border border-stone-300 bg-white p-5">
-            <h3 class="text-lg font-bold text-[#142b3a]">
-              Is the event indoors?
-            </h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-              Yes. The maker booths and demonstrations are indoors. Food vendors
-              are located on the covered south patio.
-            </p>
-          </article>
-        </div>
+    </div>
+  </div>
+          <div class="hs-accordion" id="accordion-heading-four">
+            <button
+              class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
+              aria-controls="accordion-collapse-four"
+            >
+              <h3 class="text-lg font-bold text-[#142b3a]">Is the event indoors?</h3>
+              <svg
+                class="hs-accordion-active:hidden h-3 w-3 shrink-0 text-[#246b63]"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <svg
+                class="hs-accordion-active:block hidden h-3 w-3 shrink-0 text-[#246b63]"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 11.354a.5.5 0 0 1 .708 0L8 5.707l5.646 5.647a.5.5 0 0 1-.708-.708l-6-6a.5.5 0 0 1-.708 0l-6 6a.5.5 0 0 1-.708z"
+                />
+              </svg>
+            </button>
+
+            <div id="accordion-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+              <p class="p-5 text-sm leading-6 text-slate-600">
+                Yes, the maker booths and demonstrations are indoors. Food vendors
+                are located
+
+
+          </div>
+     
       </section>
     </main>
 
