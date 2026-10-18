@@ -167,7 +167,7 @@ The user needs to be able to find the things their looking for on the cards by c
 X-data, x-for, @click, x-bind:class, x-text, x-show
 
 **Why Alpine was appropriate:**  
-it was appropiate because the cards needed a clean way of being sorted and hidden 
+it was appropiate because the cards needed a clean way of being sorted and hidden
 
 ## Preline Decision
 
@@ -191,7 +191,7 @@ I added back the tailwind classes to keep the same style the visiotor questions 
 **Medium viewport:** everything is perfectly aligned and functions as intended.  
 **Wide viewport:** everything is perfectly aligned as it should be and functions as intended.  
 **Keyboard testing:** when using the keyboard everything on the page thats interactable can be focused on and used.
-**Browser console:** TODO
+**Browser console:** none
 
 ## Dependencies
 
