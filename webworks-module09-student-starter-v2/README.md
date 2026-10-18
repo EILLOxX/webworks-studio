@@ -197,7 +197,7 @@ I added back the tailwind classes to keep the same style the visiotor questions 
 
 **Alpine.js — how used:** I used alpine.js for the card filtering by catagorey, when pressing category button it hides the other cards that dont match the selected category, and the buttons show accesibility features for hover, click, active and unactive.
 **Preline UI — how used:** I used preline for the visitor questions, to make a accordian that opens each question when clicked revealing the answer for the question that has been clicked.
-**Tailwind CSS — how used:** I ussed tailwind to stylize the elements to mathch the pages theme and give elements accesbility features as focus, hover etc.
+**Tailwind CSS — how used:** I used tailwind to stylize the elements to mathch the pages theme and give elements accesbility features as focus, hover etc.
 
 ## Official Documentation Used
 
