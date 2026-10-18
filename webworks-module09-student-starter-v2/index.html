@@ -138,135 +138,140 @@
           </p>
         </div>
 
-        <!-- TODO: REQUIRED ALPINE INTERACTION
-           Add one purposeful Alpine-powered exploration tool here.
-           Requirements:
-           - x-data
-           - at least one user event
-           - at least one additional reactive directive
-           - visible, understandable interface response
-           - semantic, keyboard-accessible controls
-           Do NOT simply paste the classroom playground unchanged. --> 
+        <!--REQUIRED ALPINE INTERACTION Added sort filter to the makers section. --> 
 
-        <div
-          class="mt-8 rounded-xl border-2 border-dashed border-[#7da59c] bg-[#eef5f4] p-5"
-        >
-          <p class="font-bold text-[#174f49]">
-            Student work area: Alpine interaction
-          </p>
-          <p class="mt-1 text-sm leading-6 text-slate-700">
-            Decide what would genuinely help a visitor explore these makers,
-            then implement that behavior using Alpine.
-          </p>
-        </div>
+   
+<!-- filter cards section-->
+<div x-data="{
+  selectedCategory: 'all',
+  categories: ['all', 'ceramics', 'prints', 'textiles', 'woodcraft'],
+  setCategory(category) {
+    this.selectedCategory = category;
+  }
+}">
+  
+  <!-- Filter Buttons -->
+  <div class="mt-6 flex flex-wrap gap-3">
+    <template x-for="category in categories" :key="category">
+      <button
+        @click="setCategory(category)"
+        :class="{
+          'bg-[#f0b45b] text-[#142b3a]': selectedCategory === category,
+          'bg-[#f7f4ee] text-[#142b3a] hover:bg-[#e6e1d8]': selectedCategory !== category
+        }"
+        class="rounded-lg px-5 py-2 font-bold focus:outline-none focus:ring-4 focus:ring-[#246b63]/50"
+      >
+        <!-- Fix 'prints' to display as 'Printmaking' visually if desired, otherwise defaults to capitalized word (was suggested) -->
+        <span x-text="category === 'prints' ? 'Printmaking' : category.charAt(0).toUpperCase() + category.slice(1)"></span>
+      </button>
+    </template>
+  </div>
+             
+  <!-- Cards Grid -->
+  <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    
+    <!-- Ceramics Card -->
+    <article
+      x-show="selectedCategory === 'all' || selectedCategory === 'ceramics'"
+      class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
+    >
+      <img
+        src="images/ceramics.svg"
+        alt="Handmade ceramic mugs displayed at a market table"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <div class="p-5">
+        <p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">
+          Ceramics
+        </p>
+        <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
+          Cielo Clay Studio
+        </h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">
+          Small-batch mugs, bowls, and serving pieces inspired by desert colors and South Texas skies.
+        </p>
+        <p class="mt-4 text-sm"><strong>Booth:</strong> A12</p>
+      </div>
+    </article>
 
-        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <article
-            data-category="ceramics"
-            class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
-          >
-            <img
-              src="images/ceramics.svg"
-              alt="Handmade ceramic mugs displayed at a market table"
-              class="aspect-[3/2] w-full object-cover"
-            />
-            <div class="p-5">
-              <p
-                class="text-sm font-bold uppercase tracking-wide text-[#246b63]"
-              >
-                Ceramics
-              </p>
-              <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
-                Cielo Clay Studio
-              </h3>
-              <p class="mt-2 text-sm leading-6 text-slate-600">
-                Small-batch mugs, bowls, and serving pieces inspired by desert
-                colors and South Texas skies.
-              </p>
-              <p class="mt-4 text-sm"><strong>Booth:</strong> A12</p>
-            </div>
-          </article>
+    <!-- Prints Card -->
+    <article
+      x-show="selectedCategory === 'all' || selectedCategory === 'prints'"
+      class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
+    >
+      <img
+        src="images/printmaking.svg"
+        alt="Colorful art prints hanging in a local maker booth"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <div class="p-5">
+        <p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">
+          Printmaking
+        </p>
+        <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
+          Rio Press Co.
+        </h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">
+          Hand-pulled prints featuring native plants, neighborhood architecture, and regional landmarks.
+        </p>
+        <p class="mt-4 text-sm"><strong>Booth:</strong> B04</p>
+      </div>
+    </article>
 
-          <article
-            data-category="prints"
-            class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
-          >
-            <img
-              src="images/printmaking.svg"
-              alt="Colorful art prints hanging in a local maker booth"
-              class="aspect-[3/2] w-full object-cover"
-            />
-            <div class="p-5">
-              <p
-                class="text-sm font-bold uppercase tracking-wide text-[#246b63]"
-              >
-                Printmaking
-              </p>
-              <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
-                Rio Press Co.
-              </h3>
-              <p class="mt-2 text-sm leading-6 text-slate-600">
-                Hand-pulled prints featuring native plants, neighborhood
-                architecture, and regional landmarks.
-              </p>
-              <p class="mt-4 text-sm"><strong>Booth:</strong> B04</p>
-            </div>
-          </article>
+    <!-- Textiles Card -->
+    <article
+      x-show="selectedCategory === 'all' || selectedCategory === 'textiles'"
+      class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
+    >
+      <img
+        src="images/textiles.svg"
+        alt="Handwoven textiles and fabric goods at a market stand"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <div class="p-5">
+        <p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">
+          Textiles
+        </p>
+        <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
+          Luna Loom Works
+        </h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">
+          Handwoven scarves, table runners, and small home goods in natural fibers and muted colors.
+        </p>
+        <p class="mt-4 text-sm"><strong>Booth:</strong> C07</p>
+      </div>
+    </article>
 
-          <article
-            data-category="textiles"
-            class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
-          >
-            <img
-              src="images/textiles.svg"
-              alt="Handwoven textiles and fabric goods at a market stand"
-              class="aspect-[3/2] w-full object-cover"
-            />
-            <div class="p-5">
-              <p
-                class="text-sm font-bold uppercase tracking-wide text-[#246b63]"
-              >
-                Textiles
-              </p>
-              <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
-                Luna Loom Works
-              </h3>
-              <p class="mt-2 text-sm leading-6 text-slate-600">
-                Handwoven scarves, table runners, and small home goods in
-                natural fibers and muted colors.
-              </p>
-              <p class="mt-4 text-sm"><strong>Booth:</strong> C07</p>
-            </div>
-          </article>
+    <!-- Woodcraft Card -->
+    <article
+      x-show="selectedCategory === 'all' || selectedCategory === 'woodcraft'"
+      class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
+    >
+      <img
+        src="images/woodcraft.svg"
+        alt="Handcrafted wooden serving boards on display"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <div class="p-5">
+        <p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">
+          Woodcraft
+        </p>
+        <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
+          Mesquite &amp; Main
+        </h3>
+        <p class="mt-2 text-sm leading-6 text-slate-600">
+          Serving boards, trays, and small household pieces made from reclaimed and locally sourced wood.
+        </p>
+        <p class="mt-4 text-sm"><strong>Booth:</strong> D03</p>
+      </div>
+    </article>
 
-          <article
-            data-category="woodcraft"
-            class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm"
-          >
-            <img
-              src="images/woodcraft.svg"
-              alt="Handcrafted wooden serving boards on display"
-              class="aspect-[3/2] w-full object-cover"
-            />
-            <div class="p-5">
-              <p
-                class="text-sm font-bold uppercase tracking-wide text-[#246b63]"
-              >
-                Woodcraft
-              </p>
-              <h3 class="mt-2 text-xl font-bold text-[#142b3a]">
-                Mesquite &amp; Main
-              </h3>
-              <p class="mt-2 text-sm leading-6 text-slate-600">
-                Serving boards, trays, and small household pieces made from
-                reclaimed and locally sourced wood.
-              </p>
-              <p class="mt-4 text-sm"><strong>Booth:</strong> D03</p>
-            </div>
-          </article>
-        </div>
+  </div>
+</div>
       </section>
 
+
+      <!-- Plan Your Visit Section -->
       <section
         id="plan"
         class="border-y border-stone-300 bg-white"
@@ -321,6 +326,7 @@
             </dl>
           </div>
 
+          <!-- Live Demonstrations Section -->
           <aside
             class="rounded-2xl bg-[#173946] p-7 text-white"
             aria-labelledby="demo-heading"
@@ -360,6 +366,7 @@
         </div>
       </section>
 
+      <!-- Visitor Questions Section -->
       <section
         id="questions"
         class="mx-auto max-w-6xl px-5 py-14"
@@ -383,18 +390,17 @@
           </p>
         </div>
 
-        <!-- TODO: REQUIRED PRELINE COMPONENT
-           Choose ONE appropriate Preline component and adapt it here.
-           Possible directions: accordion, tabs, modal, dropdown, alert,
-           or another instructor-approved Preline component.
-           Use official Preline documentation. -->
+
+
+        <!--  PRELINE COMPONENT  added accordion component to the questions section. -->
 
 
 
         
-
+<!-- accordion section-->
 <div class="hs-accordion-group mt-7 grid gap-5 md:grid-cols-2">
 
+  <!-- question 1-->
   <div class="hs-accordion active rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-one">
     <button
       class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
@@ -434,6 +440,7 @@
     </div>
   </div>
 
+  <!--  question 2-->
   <div class="hs-accordion rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-two">
     <button
       class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
@@ -473,6 +480,7 @@
   </div>
   </div>
 
+  <!--  question 3-->
   <div class="hs-accordion rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-three">
     <button
       class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"
@@ -512,6 +520,8 @@
             </p>
     </div>
   </div>
+
+  <!-- question 4-->
           <div class="hs-accordion rounded-xl border border-stone-300 bg-white p-5" id="accordion-heading-four">
             <button
               class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-lg bg-[#f7f4ee] p-5 text-left font-bold text-[#142b3a] transition hover:bg-[#e6e1d8]"

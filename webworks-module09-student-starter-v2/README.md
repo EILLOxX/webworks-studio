@@ -156,18 +156,18 @@ Replace each TODO before submitting.
 
 ## Project Summary
 
-TODO
+Used preline to make a accordion for the visitor questions, and alpine to create card filtering by catagorey
 
 ## Alpine Decision
 
 **User/client need:**  
-TODO
+The user needs to be able to find the things their looking for on the cards by catagory filtering.
 
 **Alpine directives used:**  
-TODO
+X-data, x-for, @click, x-bind:class, x-text, x-show
 
 **Why Alpine was appropriate:**  
-TODO
+it was appropiate because the cards needed a clean way of being sorted and hidden 
 
 ## Preline Decision
 
@@ -182,27 +182,27 @@ I added back the tailwind classes to keep the same style the visiotor questions 
 
 ## Accessibility Notes
 
-1. TODO
+1. added styles to interactble things that shows if its unactive, active or focused.
 2. when using the site with a keyboard every interactable thing can be focused on
 
 ## Testing Notes
 
-**Narrow viewport:** TODO  
-**Medium viewport:** TODO  
-**Wide viewport:** TODO  
-**Keyboard testing:** TODO  
+**Narrow viewport:** keeps everything in perfect view and alinged
+**Medium viewport:** everything is perfectly aligned and functions as intended.  
+**Wide viewport:** everything is perfectly aligned as it should be and functions as intended.  
+**Keyboard testing:** when using the keyboard everything on the page thats interactable can be focused on and used.
 **Browser console:** TODO
 
 ## Dependencies
 
-**Alpine.js — how used:** TODO  
-**Preline UI — how used:** TODO  
-**Tailwind CSS — how used:** TODO
+**Alpine.js — how used:** I used alpine.js for the card filtering by catagorey, when pressing category button it hides the other cards that dont match the selected category, and the buttons show accesibility features for hover, click, active and unactive.
+**Preline UI — how used:** I used preline for the visitor questions, to make a accordian that opens each question when clicked revealing the answer for the question that has been clicked.
+**Tailwind CSS — how used:** I ussed tailwind to stylize the elements to mathch the pages theme and give elements accesbility features as focus, hover etc.
 
 ## Official Documentation Used
 
-- Alpine.js: https://alpinejs.dev/plugins/sort
-- Preline UI: TODO
+- Alpine.js: https://alpinejs.dev/plugins/sort https://alpinejs.dev/directives/show https://alpinejs.dev/directives/data https://alpinejs.dev/directives/for https://alpinejs.dev/directives/bind#binding-classes
+- Preline UI: https://preline.co/docs/components/accordion.html
 
 # Official References
 
@@ -214,20 +214,20 @@ I added back the tailwind classes to keep the same style the visiotor questions 
 
 # Final Check
 
-- [ ] `npm run build` completes.
-- [ ] Tailwind styles load.
-- [ ] Alpine interaction works.
-- [ ] Preline component works.
-- [ ] They solve different needs.
-- [ ] Keyboard testing works.
-- [ ] Responsive testing is complete.
-- [ ] Console has no unresolved errors.
-- [ ] README is complete.
-- [ ] `css/output.css` is committed.
-- [ ] `js/vendor/preline.js` is committed.
-- [ ] `node_modules` is not committed.
-- [ ] Work is pushed to GitHub.
-
+- [x] `npm run build` completes.
+- [x] Tailwind styles load.
+- [x] Alpine interaction works.
+- [x] Preline component works.
+- [x] They solve different needs.
+- [x] Keyboard testing works.
+- [x] Responsive testing is complete.
+- [x] Console has no unresolved errors.
+- [x] README is complete.
+- [x] `css/output.css` is committed.
+- [x] `js/vendor/preline.js` is committed.
+- [x] `node_modules` is not committed.
+- [x] Work is pushed to GitHub.
 
 # LIVE SITE URL
+
 https://eilloxx.github.io/webworks-studio/webworks-module09-student-starter-v2/
