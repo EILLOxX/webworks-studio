@@ -8,6 +8,11 @@
 @import "../node_modules/@preline/overlay/variants.css";
 @import "../node_modules/@preline/overlay/theme.css";
 
+@source "../node_modules/@preline/accordion/*.js";
+
+@import "../node_modules/@preline/accordion/variants.css";
+@import "../node_modules/@preline/accordion/theme.css";
+
 @plugin "@tailwindcss/forms";
 
 [x-cloak] {
