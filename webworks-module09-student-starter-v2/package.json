@@ -8,11 +8,15 @@
     "build": "npm run copy-preline && npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --minify"
   },
   "dependencies": {
+    "@preline/overlay": "^5.0.0",
     "preline": "4.2.0"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/forms": "0.5.11",
     "tailwindcss": "^4.3.3"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.5.1": true
   }
 }
