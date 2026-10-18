@@ -1,4 +1,5 @@
 # WebWorks Studio — Module 9 Student Starter
+
 ## Mission City Makers Market
 
 You are the **Junior Front-End Developer** assigned to improve a fictional client page using two different professional tools:
@@ -174,7 +175,7 @@ TODO
 Ui Accordion
 
 **Problem it solves:**  
-It allows the questions to be viewed first and the answeres second minimizing clutter 
+It allows the questions to be viewed first and the answeres second minimizing clutter
 
 **How you adapted it:**  
 I added back the tailwind classes to keep the same style the visiotor questions had previously
@@ -200,7 +201,7 @@ I added back the tailwind classes to keep the same style the visiotor questions 
 
 ## Official Documentation Used
 
-- Alpine.js: TODO
+- Alpine.js: https://alpinejs.dev/plugins/sort
 - Preline UI: TODO
 
 # Official References
