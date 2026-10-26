@@ -131,7 +131,7 @@ function App() {
               <div className="filter-buttons">
                 <button
                   type="button"
-                  onclick={() => setSelectedCategory("all")}
+                  onClick={() => setSelectedCategory("all")}
                   aria-pressed={selectedCategory === "all" ? "true" : "false"}
                 >
                   All
@@ -139,7 +139,7 @@ function App() {
 
                 <button
                   type="button"
-                  onclick={() => setSelectedCategory("health")}
+                  onClick={() => setSelectedCategory("health")}
                   aria-pressed={
                     selectedCategory === "health" ? "true" : "false"
                   }
@@ -149,7 +149,7 @@ function App() {
 
                 <button
                   type="button"
-                  onclick={() => setSelectedCategory("housing")}
+                  onClick={() => setSelectedCategory("housing")}
                   aria-pressed={
                     selectedCategory === "housing" ? "true" : "false"
                   }
@@ -159,7 +159,7 @@ function App() {
 
                 <button
                   type="button"
-                  onclick={() => setSelectedCategory("community")}
+                  onClick={() => setSelectedCategory("community")}
                   aria-pressed={
                     selectedCategory === "community" ? "true" : "false"
                   }
