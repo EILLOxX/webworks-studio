@@ -21,7 +21,7 @@ Document approximately three meaningful React decisions.
 list rendering
 
 **Used For:**  
-created reusuable  elements
+created reusuable elements
 
 **Why It Helps:**  
 it allows elements to be resued through out the document with out having to retype certain information everytime.
