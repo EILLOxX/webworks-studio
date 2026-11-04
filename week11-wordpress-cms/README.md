@@ -15,8 +15,7 @@ Briefly summarize what you configured in WordPress.
 ## WordPress Site Access
 
 **Site URL or instructor-access information:**  
-[Add the site URL or access information provided by your instructor.]
-
+https://susane32.sg-host.com
 ---
 
 # Content Architecture
