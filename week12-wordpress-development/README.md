@@ -18,19 +18,20 @@ Document the four required decisions below.
 ## 1. Global Design System
 
 **Requirement:**  
-[Which Southtown brand requirements were site-wide?]
+brand pallete, typography, layoutspacing
 
 **Location:**  
-[Global Styles / theme-level controls]
+site editor Global Styles
 
 **Change:**  
-[What did you change?]
+I changed the headers to be a semi bold with the southtown deep color so it stands out from others, i spaced the body texts by 1, gave the buttons the brand style color southtown warm. gave links a bolder look and southtown teal color with a southtown warm hover.
 
 **Why this level:**  
-[Why was a global solution better than editing pages individually?]
+is better at a global levelthen doing every page at a time because it allwos a quick and easy change across all the pages and
 
 **QA:**  
 [What did you test after the global change?]
+i checked every page that exsits to see if the changes i made updated and shows corectly, and i looked around to make sure there wasnt bad contrasts with certain elements.
 
 ---
 
@@ -105,6 +106,7 @@ Paste only the small relevant snippet here.
 - [ ] I checked that the brand system is consistent rather than page-specific.
 
 ### Visitor QA Notes
+
 [Briefly describe one issue you found or one important verification you made.]
 
 ## Editor Experience
@@ -116,6 +118,7 @@ Paste only the small relevant snippet here.
 - [ ] The site remained visually coherent after the editor test.
 
 ### Editor QA Notes
+
 [Briefly describe the update you tested and what you verified.]
 
 ---
