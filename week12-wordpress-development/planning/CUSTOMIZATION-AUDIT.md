@@ -9,8 +9,10 @@ This is a short planning aid, not a separate major deliverable.
 List the content and CMS structure you intend to preserve.
 
 -home, programs, news and about pages
-- 
--
+
+-some layout spacing
+
+-brand pattern design and footer and header
 
 ### 2. Which requirements are global?
 
@@ -46,8 +48,8 @@ Why is this modification necessary instead of another editor/global setting?
 
 Visitor:
 
--
+-every page that exists, different view sizes to check for proper layout adjusting, keyboard accesibilitly and can be focused
 
 Editor:
 
--
+-do a maintainability test by adding temporary text to the home page explore our prorams section
