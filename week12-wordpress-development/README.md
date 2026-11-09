@@ -71,25 +71,37 @@ i checked every page that exists to double make sure my changes went through.
 Complete **one** option.
 
 **Option used:**  
-[theme.json OR targeted CSS]
+targeted CSS
 
 **Location:**  
 [Where the modification lives in the supplied environment.]
+site-editor- additional css
 
 **Code / configuration snippet:**
 
 ```text
-Paste only the small relevant snippet here.
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible { outline: 3px solid #2B7A70!important;
+ outline-offset: 2px !important;
+ box-shadow: none !important;
+}
 ```
 
 **Reason:**  
 [What legitimate requirement could not be solved cleanly through the available editor/global controls?]
+changing the keyboard focus color to one that doesnt create contrast issues, this one required having additional targeted css added.
 
 **Documentation:**  
 [Which official WordPress reference helped you understand the change?]
+https://wordpress.org/documentation/article/styles-overview/#applying-custom-css
 
 **QA:**  
 [How did you verify the change worked without creating new problems?]
+i went into visitor mode and pressed tab to use my keyboard to test if the color focuse change went through for each page
 
 ---
 

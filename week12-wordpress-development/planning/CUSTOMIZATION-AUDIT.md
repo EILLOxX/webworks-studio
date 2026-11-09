@@ -38,18 +38,18 @@ What should change once and affect multiple pages?
 Choose **one**:
 
 - [ ] small `theme.json` adjustment
-- [ ] small targeted CSS rule
+- [x] small targeted CSS rule
 
 Why is this modification necessary instead of another editor/global setting?
 
--
+-i dont think a focuse change can be done in the global or editor setting with out need to add additional code to change a focused state color for better contrast and visibilitly,
 
 ### 6. What will you test?
 
 Visitor:
 
--every page that exists, different view sizes to check for proper layout adjusting, keyboard accesibilitly and can be focused
+-every page that exists, different view sizes to check for proper layout adjusting, keyboard accesibilitly and can be focused,
 
 Editor:
 
--do a maintainability test by adding temporary text to the home page explore our prorams section
+-do a maintainability test by adding temporary text to the home page explore our programs section
