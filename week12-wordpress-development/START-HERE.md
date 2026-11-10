@@ -1,4 +1,5 @@
 # Start Here — Week 12
+
 ## Customize the Experience: WordPress Development
 
 **Client:** Southtown Community Arts  
@@ -45,9 +46,11 @@ Your actual customization work happens in the instructor-supplied WordPress envi
 ## Required Production Work
 
 ### 1. Global Design System
+
 Translate the supplied Southtown brand direction into appropriate **Global Styles / theme-level controls** in the course environment.
 
 Your global work should address:
+
 - the assigned color palette;
 - heading/body typography direction;
 - button or link treatment where supported;
@@ -56,15 +59,18 @@ Your global work should address:
 Do not manually restyle individual pages when the decision is site-wide.
 
 ### 2. Branded Reusable Pattern
+
 Use the existing Week 11 reusable content as your starting point.
 
 Create or significantly customize one reusable branded pattern so that:
+
 - the structure remains reusable;
 - the visual treatment reflects Southtown's brand;
 - content can be replaced without rebuilding the layout;
 - the pattern remains understandable to a future editor.
 
 ### 3. One Site-Wide Structure Customization
+
 Make **one** appropriate shared-structure change using the Site Editor.
 
 Examples may include a header, footer, navigation placement, or another repeated site-wide structural area.
@@ -72,24 +78,29 @@ Examples may include a header, footer, navigation placement, or another repeated
 Choose a change that genuinely belongs at the shared level.
 
 ### 4. One Controlled Development-Level Modification
+
 Complete **one — not two** — controlled development-level modification.
 
 Depending on the WordPress environment, use either:
+
 - a small `theme.json` adjustment; **OR**
 - one small targeted CSS rule.
 
 Do not add PHP, plugins, custom blocks, or a child-theme build just to make the project feel more advanced.
 
 Document:
+
 - what you changed;
 - where it lives;
 - why the editor/global controls were not enough;
 - how you tested it.
 
 ### 5. Visitor + Editor QA
+
 Test both experiences.
 
 **Visitor checks**
+
 - responsive behavior;
 - visual consistency;
 - contrast and readability;
@@ -98,6 +109,7 @@ Test both experiences.
 - brand presentation.
 
 **Editor checks**
+
 - routine content remains editable;
 - the branded pattern remains understandable;
 - a simple content update does not require code;
