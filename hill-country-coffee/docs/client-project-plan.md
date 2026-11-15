@@ -258,8 +258,6 @@ Remember: out of scope does not mean “bad idea.”
 Home
 ├── [Menu]
 ├── [Locations]
-│   ├── [Child page, if needed]
-│   └── [Child page, if needed]
 └── [About]
 ```
 
