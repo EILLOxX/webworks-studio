@@ -6,6 +6,9 @@ This folder is the **single continuing client project** for the final WebWorks S
 
 Do not create a new copy of the project each week. Continue developing this folder as the project moves from planning into production, quality assurance, and final delivery.
 
+## documented client project plan:
+https://github.com/EILLOxX/webworks-studio/blob/main/hill-country-coffee/docs/client-project-plan.md
+
 ## Client
 
 **Hill Country Coffee**  

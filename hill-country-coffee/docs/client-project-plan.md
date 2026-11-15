@@ -129,7 +129,7 @@ Renee Needs a way to review and share food and drink information with a friend
 
 # 5. Priority User Tasks
 
-Rank the most important things visitors need to accomplish.
+the most important things visitors need to accomplish:
 
 | Priority | User Task                                          | Primary Persona(s)  | Why It Matters                                                                                      |
 | -------- | -------------------------------------------------- | ------------------- | --------------------------------------------------------------------------------------------------- |
@@ -143,9 +143,7 @@ Rank the most important things visitors need to accomplish.
 
 # 6. Content Inventory & Organization
 
-Identify the content the client has supplied, what is still missing, and how related information should be grouped.
-
-At this stage, focus on **content and purpose**, not page layout.
+content the client has supplied, what is still missing, and how related information should be grouped:
 
 | Content / Proposed Section  | Primary Purpose                                  | Primary User Task                                                | Supplied Content / Assets                                                   | Missing / Needed                                              | MVP or Future                                        |
 | --------------------------- | ------------------------------------------------ | ---------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------- |
@@ -176,9 +174,7 @@ Add additional requirements only when they are supported by the project.
 
 # 8. Accessibility Requirements
 
-Define accessibility requirements before design/development begins.
-
-At minimum, address:
+accessibility requirements before design/development begins:
 
 ## Semantic Structure
 
@@ -224,7 +220,7 @@ each page will be checked for consistent navagation, proper labeled headings in 
 
 # 9. MVP — Must Ship
 
-List the smallest responsible final site that meets priority goals.
+the smallest responsible final site that meets priority goals:
 
 - [ ] There's consistent navagation across all pages
 - [ ] Location details and hours
@@ -336,24 +332,22 @@ the major checkpoints for the remaining client-project sprints:
 
 # 15. Prioritized Sprint Backlog
 
-Break the remaining work into manageable tasks.
-
-Use:
+the remaining work into manageable tasks:
 
 - **Priority:** High / Medium / Low
 - **Effort:** Small / Medium / Large
 - **Status:** To Do
 
-| Task                                        | Priority | Effort | Dependency                             | Status |
-| ------------------------------------------- | -------- | ------ | -------------------------------------- | ------ |
-| having the remaing unapproved info approved | High     | small  | client need to communicate and provide | To Do  |
-|                                             |          |        |                                        | To Do  |
-|                                             |          |        |                                        | To Do  |
-|                                             |          |        |                                        | To Do  |
-|                                             |          |        |                                        | To Do  |
-|                                             |          |        |                                        | To Do  |
-|                                             |          |        |                                        | To Do  |
-|                                             |          |        |                                        | To Do  |
+| Task                                        | Priority | Effort | Dependency                                | Status |
+| ------------------------------------------- | -------- | ------ | ----------------------------------------- | ------ |
+| having the remaing unapproved info approved | High     | small  | client need to communicate and provide    | To Do  |
+|                                             |          |        |                                           | To Do  |
+|                                             |          |        |                                           | To Do  |
+|                                             |          |        |                                           | To Do  |
+|                                             |          |        |                                           | To Do  |
+|                                             |          |        |                                           | To Do  |
+| test the site for accesibilitly etc.        | High     | medium | the site already has basic functionalitly | To Do  |
+| Complete the documentations checks          | medium   | medium | everything before is completed            | To Do  |
 
 ---
 
