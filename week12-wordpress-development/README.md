@@ -10,6 +10,7 @@ Briefly summarize how you customized the existing Week 11 CMS without making rou
 I added brand themed palltte allowing future editors to see the new fully named color palltte, added typograaphy and global layout spaceing and other customizations, while keeping everything else the same and easy to maintaine from week 11.
 
 # live site:
+
 https://susane32.sg-host.com/home/
 
 # Customization Decisions
