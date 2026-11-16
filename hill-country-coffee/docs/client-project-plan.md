@@ -334,19 +334,15 @@ the major checkpoints for the remaining client-project sprints:
 
 the remaining work into manageable tasks:
 
-- **Priority:** High / Medium / Low
-- **Effort:** Small / Medium / Large
-- **Status:** To Do
-
 | Task                                        | Priority | Effort | Dependency                                | Status |
 | ------------------------------------------- | -------- | ------ | ----------------------------------------- | ------ |
 | having the remaing unapproved info approved | High     | small  | client need to communicate and provide    | To Do  |
-|                                             |          |        |                                           | To Do  |
-|                                             |          |        |                                           | To Do  |
-|                                             |          |        |                                           | To Do  |
-|                                             |          |        |                                           | To Do  |
-|                                             |          |        |                                           | To Do  |
-| test the site for accesibilitly etc.        | High     | medium | the site already has basic functionalitly | To Do  |
+| build the html foundation                   | high     | medium | week 13 completed, and week 14 begins     | To Do  |
+| build the approved pages                    | high     | medium | approved supplied contents                | To Do  |
+| add shareable anchor links to page sections | medium   | small  | approved pages built                      | To Do  |
+| evelop mobile-first responsive CSS          | high     | large  | Core semantic HTML pages built            | To Do  |
+| implement accessibility & link standards    | medium   | medium | html structure and css styling in place   | To Do  |
+| test the site for accesibilitly etc. qa     | High     | medium | the site already has basic functionalitly | To Do  |
 | Complete the documentations checks          | medium   | medium | everything before is completed            | To Do  |
 
 ---
