@@ -11,9 +11,9 @@ This repository continues the Hill Country Coffee client project begun in Week 1
 
 ## Project Summary
 
-Briefly summarize the client need and the MVP you are building.
+summarized the client need and the MVP I'm building:
 
-the client needs to be able to maintain their site nd make changes as they grow and the mvp must have conssistent navagation across all pages, location details and hours, full biography for hill country and their connection, responsive layouts and sharable links for certain pages. all acording to the client-project-plan.md
+the client needs to be able to maintain their site and make changes as they grow and the mvp must have conssistent navagation across all pages, location details and hours, full biography for hill country and their connection, responsive layouts and sharable links for certain pages. all acording to the client-project-plan.md
 
 ---
 
@@ -39,12 +39,12 @@ Update this section using your Week 13 MVP.
 
 ### In Progress
 
-- [ ] 
-- [ ] 
+- [ ] brand theme font, and pallete
+- [ ] brand images
 
 ### Known Issues / Dependencies
 
-- [ ] 
+- [ ] place holder texts for menu items to be updated later
 - [ ] 
 
 ### Intentionally Deferred / Out of Scope
