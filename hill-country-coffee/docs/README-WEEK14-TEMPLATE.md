@@ -42,6 +42,7 @@ Update this section using your Week 13 MVP.
 
 - [ ] brand theme font, and pallete
 - [ ] brand images
+- [ ] functonal jumplinks
 
 ### Known Issues / Dependencies
 
