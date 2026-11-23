@@ -23,6 +23,7 @@ the client needs to be able to maintain their site and make changes as they grow
 Didnt use github, i used wordpress so the client can easily update their content without having to learn coding or anything related to that.
 
 **Word Press site URL:**
+https://olliewolfcreations.wordpress.com
 
 
 ---
@@ -33,7 +34,7 @@ Update this section using your Week 13 MVP.
 
 ### Complete
 
-- [ ] client content is added (mvp pages aproved conetent etc.)
+- [ ] client content is added (mvp pages aproved content etc.)
 - [ ] responisve design is present
 - [ ] 
 
@@ -45,7 +46,7 @@ Update this section using your Week 13 MVP.
 ### Known Issues / Dependencies
 
 - [ ] place holder texts for menu items to be updated later
-- [ ] 
+- [ ] location and hours missing
 
 ### Intentionally Deferred / Out of Scope
 
