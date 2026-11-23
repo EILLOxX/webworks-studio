@@ -34,7 +34,7 @@ Update this section using your Week 13 MVP.
 
 ### Complete
 
-- [ ] client content is added (mvp pages aproved content etc.)
+- [x] client content is added (mvp pages aproved content etc.)
 - [ ] responisve design is present
 - [ ] 
 
@@ -47,6 +47,7 @@ Update this section using your Week 13 MVP.
 
 - [ ] place holder texts for menu items to be updated later
 - [ ] location and hours missing
+
 
 ### Intentionally Deferred / Out of Scope
 
